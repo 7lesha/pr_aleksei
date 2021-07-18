@@ -1,0 +1,137 @@
+@import "../utils/parameters";
+
+.main-section {
+    background: url("../imgs/img1.png");
+    background-size: cover;
+    //min-height: 850px;
+    padding: 23.5rem 0 2rem 0;
+    margin-bottom: 20.4rem;
+
+    &__row {
+
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+
+        font-weight: bold;
+        font-size: 8rem;
+        line-height: 1.12;
+        letter-spacing: 0.1rem;
+        color: $c-text;
+        max-width: 57rem;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+
+        span {
+            font-size: 8rem;
+            line-height: 1.12;
+            letter-spacing: 1px;
+            color: #DE470D;
+        }
+    }
+
+    &__a {
+        display: inline-block;
+        padding: 2rem 7rem;
+        background: #FABAA0;
+        border-radius: 0.8rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.71;
+        text-align: center;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        color: $c-text2;
+        margin-bottom: 16.5rem;
+    }
+
+    &__block {
+        padding: 2rem;
+        background-color: #708D92;
+        margin-bottom: -13rem;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    &__li {
+        padding: 0 2.5rem;
+    }
+
+    &__a {
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.71;
+        color: #2B2B2B;
+    }
+}
+
+.block {
+    display: flex;
+
+    &__first {
+        padding: 3.5rem 7.5rem 2.8rem 8rem;
+    }
+
+    &__second {
+        padding: 4rem 3rem 4rem 4rem;
+    }
+
+    &__third {
+        padding: 3.5rem 6.3rem 3rem 6.5rem;
+    }
+
+    &__fourth {
+        padding: 3.5rem 0rem 3.1rem 0rem;
+    }
+
+    &__title {
+
+        font-size: 2.4rem;
+        line-height: 1.42;
+        //text-align: center;
+        letter-spacing: 0.05rem;
+        color: #FFF;
+        margin-bottom: 3rem;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        line-height: 1.83;
+        //text-align: center;
+        color: #FFF;
+        max-width: 20rem;
+    }
+
+    &__dollars {
+
+        font-size: 4.5rem;
+        line-height: 1.5;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        color: #FFF;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        color: #FBDCC5;
+    }
+}
+
+.blocks {
+    border: 0.1rem solid #fff;
+}
+
+.rectangle {
+    border-top: 0.1rem solid #fff;
+}

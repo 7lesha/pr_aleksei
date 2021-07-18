@@ -1,0 +1,66 @@
+@import "../utils/parameters";
+
+.work-section {
+
+    &__row {
+        padding: 0 7rem;
+        margin-bottom: 6rem;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $c-text2;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 4.5rem;
+        line-height: 0.76;
+        color: $c-text;
+        margin-bottom: 6rem;
+    }
+
+    &__good {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.good {
+    width: 29.35%;
+
+    &__img {
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+
+    font-size: 2.4rem;
+    line-height: 1.25;
+    color: #DE470D;
+    margin-bottom: 1.5rem;
+
+        span {
+            font-weight: bold;
+            font-size: 2.4rem;
+            line-height: 1.25;
+            color: $c-text;
+        }
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 1.83;
+        color: $c-text2;
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+}

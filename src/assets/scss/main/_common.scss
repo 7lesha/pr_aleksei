@@ -4,9 +4,15 @@ html {
     color: $c-text;
     font-family: $body-font;
     font-size: $font-size-base;
-    line-height: 1.2;
+    line-height: 1.56;
     font-weight: 400;
     font-style: normal;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -18,7 +24,6 @@ html {
 
 .main {
     flex: 1 0 auto;
-    padding-top: 47px;
 }
 
 .footer {

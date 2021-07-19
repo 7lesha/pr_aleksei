@@ -1,0 +1,68 @@
+@import "../utils/parameters";
+
+.footer {
+
+    &__row {
+
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__boonlett {
+        width: 50%;
+    }
+
+    &__links{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.boonlett {
+
+    &__tr {
+
+    }
+
+    &__td {
+
+    }
+
+    &__img {
+
+    }
+
+    &__boon-text {
+
+    }
+
+    &__description {
+
+    }
+
+    &__text {
+
+    }
+}
+
+.links {
+
+    &__title {
+
+    }
+
+    &__ul {
+
+    }
+
+    &__li {
+
+    }
+
+    &__a {
+
+    }
+}

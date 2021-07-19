@@ -2,12 +2,10 @@
 
 .shop-section {
     background-color: $c-primary;
+    padding: 7.4rem 0 5.5rem 0;
+    margin-bottom: 7rem;
 
     &__row{
-        padding: 7.3rem 0;
-    }
-
-    &__content {
 
     }
 
@@ -29,14 +27,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 4rem;
-        padding: 0 4.3rem;
+        padding: 0 3.3rem;
     }
 
     &__products {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0 1.7rem;
     }
 }
 
@@ -106,7 +103,7 @@
         color: $c-text;
         background: #FBDCC5;
         border-radius: 0.3rem;
-        padding: 0 1.3rem 0 0.6rem;
+        padding: 0.3rem 1.3rem 0 0.6rem;
         display: inline-block;
     }
 }

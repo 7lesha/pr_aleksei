@@ -3,16 +3,45 @@ section.shop-section
     hr.shop-section__hr
     .container.shop-section__row 
         .shop-section__list 
-            mixin item(img, text)
-                .list 
-                    img.list__img(src=img, alt="картинка")
-                    .list__text=text
-            +item('./assets/imgs/img5.svg','Toxin Free')
-            +item('./assets/imgs/img6.svg','Social Good')
-            +item('./assets/imgs/img7.svg','Reusable')
-            +item('./assets/imgs/img8.svg','Made in the USA')
-            +item('./assets/imgs/img9.svg','Certified Organic')
-            +item('./assets/imgs/img10.svg','Certified B Corporation')
+            mixin item(args={})
+                if(args.modification)
+                    .list.list-active
+                        img.list__img(src=args.img, alt="картинка")
+                        .list__text=args.text
+                else
+                    .list
+                        img.list__img(src=args.img, alt="картинка")
+                        .list__text=args.text
+            +item({
+                img:'./assets/imgs/img5.svg', 
+                text:'Toxin Free',
+                modification: true
+            })
+            +item({
+                img:'./assets/imgs/img6.svg',
+                text:'Social Good',
+                modification: false
+            })
+            +item({
+                img:'./assets/imgs/img7.svg',
+                text:'Reusable',
+                modification: false
+            })
+            +item({
+                img:'./assets/imgs/img8.svg',
+                text:'Made in the USA',
+                modification: false
+            })
+            +item({
+                img:'./assets/imgs/img9.svg',
+                text:'Certified Organic',
+                modification: false
+            })
+            +item({
+                img:'./assets/imgs/img10.svg',
+                text:'Certified B Corporation',
+                modification: false
+            })
         .shop-section__products
             mixin items(img, text, title, cost, giveback)
                 .products

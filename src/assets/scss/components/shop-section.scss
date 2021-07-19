@@ -49,8 +49,8 @@
     }
 
     &__text {
-        font-size: 1.3rem;
-        line-height: 1.84;
+        font-size: 1.4rem;
+        line-height: 1.46;
         text-align: center;
         color: $c-text;
         margin-top: 0.5rem;
@@ -108,3 +108,11 @@
     }
 }
 
+.list-active {
+    background: #FBDCC5;
+
+    .list__text {
+        font-size: 1.3rem;
+        line-height: 1.57;
+    }
+}

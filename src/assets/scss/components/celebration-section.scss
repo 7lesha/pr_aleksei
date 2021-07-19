@@ -62,7 +62,74 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    img {
+    &__img1 {
+        width: 26.2rem;
+        height: 26.2rem;
         margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img18.png");
+        background-size: cover;
+    }
+    &__img2 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img19.png");
+        background-size: cover;
+    }
+    &__img3 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img20.png");
+        background-size: cover;
+    }
+    &__img4 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img21.png");
+        background-size: cover;
+    }
+    &__img5 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img22.png");
+        background-size: cover;
+    }
+    &__img6 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img23.png");
+        background-size: cover;
+    }
+    &__img7 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img24.png");
+        background-size: cover;
+    }
+    &__img8 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img25.png");
+        background-size: cover;
+    }
+    &__img9 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img26.png");
+        background-size: cover;
+    }
+    &__img10 {
+        width: 26.2rem;
+        height: 26.2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(rgba(52, 52, 52, 0.15),rgba(52, 52, 52, 0.15)), url("../imgs/img27.png");
+        background-size: cover;
     }
 }

@@ -639,13 +639,67 @@ button {
   margin-right: 1.2rem;
   padding: 1rem 2rem; }
 
-.footer__content {
-  display: flex; }
+.footer {
+  background: linear-gradient(to right, #708D92 50%, #F7F5F2 50%); }
+  .footer__content {
+    display: flex; }
+  .footer__boonlett {
+    width: 50%;
+    padding: 9rem 10.8rem 9.7rem 7.5rem; }
+  .footer__links-b {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5.6rem 0rem 3rem 11rem; }
 
-.footer__boonlett {
-  width: 50%; }
+.boonlett {
+  border: 1px solid #FFF;
+  box-sizing: border-box;
+  border-radius: 0px;
+  margin-bottom: 0.4rem; }
+  .boonlett__tr {
+    border: 1px solid #FFF; }
+  .boonlett__td {
+    border: 1px solid #FFF;
+    padding: 2rem 0rem 2.3rem 3.3rem; }
+  .boonlett__boon-text {
+    padding: 0rem 3rem 0rem 3rem;
+    font-size: 2.1rem;
+    line-height: 1.05;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.1rem;
+    color: #FFF; }
+  .boonlett__description {
+    font-size: 1.6rem;
+    line-height: 1.56;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: #FFF;
+    padding: 2rem 4rem 2rem 4rem; }
+  .boonlett__text {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 2.09;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #FFF; }
 
-.footer__links {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap; }
+.links-b {
+  margin: 0 8.5rem 0rem 0;
+  display: block; }
+  .links-b__title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #343434;
+    margin-bottom: 1rem; }
+  .links-b__li {
+    margin-bottom: 1.5rem; }
+  .links-b__links {
+    font-size: 1.2rem;
+    line-height: 1.35;
+    color: #747474; }

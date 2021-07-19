@@ -5,22 +5,22 @@ footer.footer
                 table.boonlett 
                     tr.boonlett__tr 
                         td.boonlett__td 
-                            img.boonlett__img(src="", alt="картинка")
+                            img.boonlett__img(src="./assets/imgs/img28.svg", alt="картинка")
                         td.boonlett__boon-text  boon (def.)
                     tr.boonlett__tr 
-                        td.boonlett__description Something very beneficial or helpful
+                        td.boonlett__description(colspan="2") Something very beneficial or helpful
                 .boonlett__text Copyright Boon Supply 2021. All Rights Reserved
-            .footer__links 
+            .footer__links-b 
                 mixin link(titles, first, second, third)
-                    .lnks
-                        .links__title=titles
-                        ul.links__ul 
-                            li.links__li 
-                                a(href="#").links__links=first
-                            li.links__li 
-                                a(href="#").links__links=second
-                            li.links__li 
-                                a(href="#").links__links=third
+                    .links-b
+                        .links-b__title=titles
+                        ul.links-b__ul 
+                            li.links-b__li 
+                                a(href="#").links-b__links=first
+                            li.links-b__li 
+                                a(href="#").links-b__links=second
+                            li.links-b__li 
+                                a(href="#").links-b__links=third
                 +link('Shop','Shop All Items','Shop Reusable','Shop Toxin Free')
                 +link('About','About Boon Market','The Boon Life','')
                 +link('Support','Contact Us','Terms of Service','Privacy Policy')

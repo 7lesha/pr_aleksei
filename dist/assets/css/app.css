@@ -254,6 +254,13 @@ button {
   .header__logo {
     width: 55%; }
 
+@media screen and (max-width: 768px) {
+  .header__links {
+    width: 70%; }
+  .header__logo {
+    width: 30%;
+    text-align: right; } }
+
 .article {
   background: #343434;
   border-radius: 0px;
@@ -308,9 +315,11 @@ button {
 .links {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 1rem;
+  flex-wrap: wrap; }
   .links__li {
-    padding: 0 2.5rem; }
+    padding: 0 2.5rem;
+    margin-bottom: 2rem; }
   .links__a {
     font-weight: bold;
     font-size: 1.4rem;
@@ -318,15 +327,16 @@ button {
     color: #2B2B2B; }
 
 .block {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   .block__first {
     padding: 3.5rem 7.5rem 2.8rem 8rem; }
   .block__second {
     padding: 4rem 3rem 4rem 4rem; }
   .block__third {
-    padding: 3.5rem 6.3rem 3rem 6.5rem; }
+    padding: 3rem 6rem 3rem 6.7rem; }
   .block__fourth {
-    padding: 3.5rem 0rem 3.1rem 0rem; }
+    padding: 3.6rem 0rem 2.5rem 0; }
   .block__title {
     font-size: 2.4rem;
     line-height: 1.42;
@@ -349,13 +359,26 @@ button {
     line-height: 1.5;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-    color: #FBDCC5; }
+    color: #FBDCC5;
+    display: inline-block; }
+  .block__text-a {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #FBDCC5;
+    display: inline-block;
+    padding: 0.5rem; }
 
 .blocks {
   border: 0.1rem solid #fff; }
 
 .rectangle {
   border-top: 0.1rem solid #fff; }
+
+@media screen and (max-width: 1140px) {
+  .block {
+    justify-content: center; } }
 
 .work-section__row {
   padding: 0 7rem;
@@ -381,6 +404,7 @@ button {
 
 .work-section__good {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
 
 .good {
@@ -404,6 +428,11 @@ button {
     max-width: 25rem;
     margin: 0 auto; }
 
+@media screen and (max-width: 1140px) {
+  .good {
+    width: 100%;
+    margin-bottom: 2rem; } }
+
 .shop-section {
   background-color: #F7F5F2;
   padding: 7.4rem 0 5.5rem 0;
@@ -416,24 +445,28 @@ button {
     color: #343434;
     margin-bottom: 9.7rem; }
   .shop-section__hr {
+    width: 100vw;
+    border-bottom: 0.1rem solid rgba(116, 116, 116, 0.2);
     margin-bottom: 5.8rem; }
   .shop-section__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4rem;
-    padding: 0 3.3rem; }
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 2rem; }
   .shop-section__products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
 
 .list {
+  cursor: pointer;
   display: flex;
   padding: 1rem 2rem;
   background: #FFF;
   border-radius: 25px;
-  padding: 0.5rem 3rem 0.5rem 1rem; }
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  margin: 0rem 0.5rem 2rem 0.5rem; }
   .list__img {
     margin-right: 1rem; }
   .list__text {
@@ -457,7 +490,9 @@ button {
   line-height: 1.33;
   letter-spacing: 0.5px;
   color: #343434;
-  margin-bottom: 1rem; }
+  margin-bottom: 0.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(52, 52, 52, 0.15); }
 
 .products__description {
   display: flex;
@@ -486,6 +521,12 @@ button {
   .list-active .list__text {
     font-size: 1.3rem;
     line-height: 1.57; }
+
+@media screen and (max-width: 1140px) {
+  .shop-section__products {
+    justify-content: center; }
+  .products {
+    margin: 2rem; } }
 
 .fresh-section {
   margin-bottom: 5.7rem; }
@@ -536,6 +577,19 @@ button {
     text-transform: uppercase;
     color: #DE470D; }
 
+@media screen and (max-width: 1140px) {
+  .content__row-img {
+    width: 100%;
+    text-align: center; }
+  .content__block {
+    width: 100%;
+    text-align: center;
+    padding: 5rem 0 0 0rem; }
+  .content__title {
+    margin: 0 auto;
+    max-width: 40rem;
+    margin-bottom: 1.6rem; } }
+
 .care-section {
   background: #F7F5F2;
   padding: 6rem 0 6rem 0;
@@ -548,10 +602,25 @@ button {
 .content__row-img-second {
   width: 50%; }
 
+@media screen and (max-width: 1140px) {
+  .content__block-second {
+    width: 100%;
+    padding: 10rem 0 5rem 0rem;
+    text-align: center; }
+  .content__row-img-second {
+    width: 100%;
+    text-align: center; } }
+
 .coffee-section {
   margin-bottom: 5.7rem; }
   .coffee-section__block {
     padding: 16.3rem 0 0 9rem; }
+
+@media screen and (max-width: 1140px) {
+  .coffee-section__block {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10rem 0 0 0rem; } }
 
 .celebration-section {
   background: #F7F5F2;
@@ -595,67 +664,28 @@ button {
 .block-imgs {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
-  .block-imgs__img1 {
+  justify-content: center; }
+  .block-imgs__img-row {
+    position: relative;
+    margin: 0.5rem 0.5rem 1.5rem 0.5rem; }
+  .block-imgs__img-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 26.2rem;
     height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img18.png");
-    background-size: cover; }
-  .block-imgs__img2 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img19.png");
-    background-size: cover; }
-  .block-imgs__img3 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img20.png");
-    background-size: cover; }
-  .block-imgs__img4 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img21.png");
-    background-size: cover; }
-  .block-imgs__img5 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img22.png");
-    background-size: cover; }
-  .block-imgs__img6 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img23.png");
-    background-size: cover; }
-  .block-imgs__img7 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img24.png");
-    background-size: cover; }
-  .block-imgs__img8 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img25.png");
-    background-size: cover; }
-  .block-imgs__img9 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img26.png");
-    background-size: cover; }
-  .block-imgs__img10 {
-    width: 26.2rem;
-    height: 26.2rem;
-    margin-bottom: 2rem;
-    background: linear-gradient(rgba(52, 52, 52, 0.15), rgba(52, 52, 52, 0.15)), url("../imgs/img27.png");
-    background-size: cover; }
+    background: rgba(52, 52, 52, 0.15); }
+
+@media screen and (max-width: 1140px) {
+  .celebration-section__text {
+    width: 100%;
+    padding: 10rem 0 0 0rem;
+    text-align: center;
+    margin: 0 auto; }
+  .celebration-section__description {
+    margin: 0 auto;
+    margin-bottom: 3.5rem; } }
 
 .boonletter-section {
   margin-bottom: 8rem; }
@@ -681,6 +711,7 @@ button {
   .boonletter-section__second-input {
     max-width: 29.6rem; }
   .boonletter-section__link {
+    display: inline-block;
     background: #343434;
     border-radius: 0.8rem;
     font-weight: bold;
@@ -702,6 +733,12 @@ button {
   color: #000000;
   margin-right: 1.2rem;
   padding: 1rem 2rem; }
+
+@media screen and (max-width: 1140px) {
+  .input {
+    margin-bottom: 2rem; }
+  .boonletter-section__link {
+    height: 7rem; } }
 
 .footer {
   background: linear-gradient(to right, #708D92 50%, #F7F5F2 50%); }
@@ -767,3 +804,21 @@ button {
     font-size: 1.2rem;
     line-height: 1.35;
     color: #747474; }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    background: linear-gradient(to bottom, #708D92 50%, #F7F5F2 50%); }
+    .footer__content {
+      flex-wrap: wrap; }
+    .footer__boonlett {
+      width: 100%;
+      text-align: center;
+      padding: 8rem 0rem 10rem 0rem; }
+    .footer .boonlett {
+      margin: 0 auto; }
+    .footer__links-b {
+      width: 100%;
+      justify-content: center;
+      padding: 12rem 0rem 10rem 0rem; }
+  .links-b {
+    margin: 0 2rem 2rem 2rem; } }

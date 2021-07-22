@@ -1,6 +1,6 @@
 section.shop-section
     .shop-section__title Shop Your Values
-    hr.shop-section__hr
+    .shop-section__hr
     .container.shop-section__row 
         .shop-section__list 
             mixin item(args={})
@@ -48,9 +48,8 @@ section.shop-section
                     img.products__img(src=img, alt="картинка")
                     .products__text=text 
                     .products__title=title 
-                    hr.products__hr
                     .products__description
-                        .products__cost!=cost
+                        a.products__cost(href="#")!=cost
                         .products__giveback=giveback
             +items("./assets/imgs/img11.png",'Boon Supply','Reusable Towels, Set of 4, Fruit','Add to Bag&emsp;-&emsp;$22','40% Giveback')
             +items("./assets/imgs/img12.png",'Zip Top','Reusable Storage Set','Add to Bag&emsp;-&emsp;$90','20% Giveback')

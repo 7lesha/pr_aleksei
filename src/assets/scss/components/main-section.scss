@@ -3,7 +3,6 @@
 .main-section {
     background: url("../imgs/img1.png");
     background-size: cover;
-    //min-height: 850px;
     padding: 23.5rem 0 2rem 0;
     margin-bottom: 20.4rem;
 
@@ -59,10 +58,12 @@
 .links {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
 
     &__li {
         padding: 0 2.5rem;
+        margin-bottom: 2rem;
     }
 
     &__a {
@@ -75,6 +76,7 @@
 
 .block {
     display: flex;
+    flex-wrap: wrap;
 
     &__first {
         padding: 3.5rem 7.5rem 2.8rem 8rem;
@@ -85,18 +87,16 @@
     }
 
     &__third {
-        padding: 3.5rem 6.3rem 3rem 6.5rem;
+        padding: 3rem 6rem 3rem 6.7rem;
     }
 
     &__fourth {
-        padding: 3.5rem 0rem 3.1rem 0rem;
+        padding: 3.6rem 0rem 2.5rem 0;
     }
 
     &__title {
-
         font-size: 2.4rem;
         line-height: 1.42;
-        //text-align: center;
         letter-spacing: 0.05rem;
         color: #FFF;
         margin-bottom: 3rem;
@@ -105,13 +105,11 @@
     &__description {
         font-size: 1.2rem;
         line-height: 1.83;
-        //text-align: center;
         color: #FFF;
         max-width: 20rem;
     }
 
     &__dollars {
-
         font-size: 4.5rem;
         line-height: 1.5;
         letter-spacing: 0.1rem;
@@ -125,6 +123,17 @@
         letter-spacing: 0.2rem;
         text-transform: uppercase;
         color: #FBDCC5;
+        display: inline-block;
+    }
+
+    &__text-a {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        color: #FBDCC5;
+        display: inline-block;
+        padding: 0.5rem;
     }
 }
 
@@ -134,4 +143,10 @@
 
 .rectangle {
     border-top: 0.1rem solid #fff;
+}
+
+@media screen and (max-width: $md) {
+    .block {
+        justify-content: center;
+    }
 }

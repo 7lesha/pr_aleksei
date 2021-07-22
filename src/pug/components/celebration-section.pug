@@ -9,14 +9,17 @@ section.celebration-section
                     a(href="#").celebration-section__link Read More
     .celebration-section__block-imgs
         .celebration-section__block-title #ShopForGood
-        .block-imgs 
-            .block-imgs__img1
-            .block-imgs__img2
-            .block-imgs__img3
-            .block-imgs__img4
-            .block-imgs__img5
-            .block-imgs__img6
-            .block-imgs__img7
-            .block-imgs__img8
-            .block-imgs__img9
-            .block-imgs__img10
+        .block-imgs
+            mixin imgs(img)
+                .block-imgs__img-row
+                    img.block-imgs__img(src=img, alt="картинка")
+            +imgs('./assets/imgs/img18.png')
+            +imgs('./assets/imgs/img19.png')
+            +imgs('./assets/imgs/img20.png')
+            +imgs('./assets/imgs/img21.png')
+            +imgs('./assets/imgs/img22.png')
+            +imgs('./assets/imgs/img23.png')
+            +imgs('./assets/imgs/img24.png')
+            +imgs('./assets/imgs/img25.png')
+            +imgs('./assets/imgs/img26.png')
+            +imgs('./assets/imgs/img27.png')

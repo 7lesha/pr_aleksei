@@ -18,3 +18,16 @@
 .content__row-img-second {
     width: 50%;
 }
+
+@media screen and (max-width: $md) {
+    .content__block-second {
+        width: 100%;
+        padding: 10rem 0 5rem 0rem;
+        text-align: center;
+    }
+    
+    .content__row-img-second {
+        width: 100%;
+        text-align: center;
+    }
+}

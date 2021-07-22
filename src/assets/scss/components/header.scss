@@ -41,5 +41,17 @@
 
     &__link {
     }
+}
 
+@media screen and (max-width: $sm) {
+    .header {
+        &__links {
+            width: 70%;
+        }
+
+        &__logo {
+            width: 30%;
+            text-align: right;
+        }
+    }
 }

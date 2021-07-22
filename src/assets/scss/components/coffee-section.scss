@@ -10,3 +10,11 @@
         padding: 16.3rem 0 0 9rem;
     }
 }
+
+@media screen and (max-width: $md) {
+    .coffee-section__block {
+        margin: 0 auto;
+        text-align: center;
+        padding: 10rem 0 0 0rem;
+    }
+}

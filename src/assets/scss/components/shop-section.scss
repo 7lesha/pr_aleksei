@@ -110,6 +110,10 @@
     }
 }
 
+.products__cost:hover {
+    color: $c-secondary;
+}
+
 .list-active {
     background: #FBDCC5;
 
@@ -126,5 +130,28 @@
 
     .products {
         margin: 2rem;
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .products__img {
+        max-width: 60.76vw;
+    }
+
+    .products {
+        text-align: center;
+
+        &__description {
+            flex-wrap: wrap;
+        }
+
+        &__cost {
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+
+        &__giveback {
+            margin: 0 auto;
+        }
     }
 }

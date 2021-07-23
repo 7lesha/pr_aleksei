@@ -55,6 +55,14 @@
         margin-bottom: 10.7rem;
         text-align: center;
     }
+
+    &__link:hover {
+        color: $c-secondary;
+    }
+}
+
+.content__img17 {
+    max-width: 38.54vw;
 }
 
 .block-imgs {
@@ -94,5 +102,17 @@
     .celebration-section__description {
         margin: 0 auto;
         margin-bottom: 3.5rem;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .celebration-section {
+        padding: 10rem 0 4rem 0;
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .celebration-section__block-title {
+        font-size: 4rem;
     }
 }

@@ -83,7 +83,7 @@
     }
 
     &__second {
-        padding: 4rem 3rem 4rem 4rem;
+        padding: 4rem 3.2rem 4rem 4rem;
     }
 
     &__third {
@@ -148,5 +148,38 @@
 @media screen and (max-width: $md) {
     .block {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .main-section__title {
+        font-size: 7.4rem;
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .main-section__title {
+        font-size: 6rem;
+    }
+
+    .block {
+        &__first {
+            padding: 3rem 3.4rem 2rem 3.4rem;
+        }
+        &__second {
+            padding: 3rem 2rem 3rem 2rem;
+        }
+        &__third {
+            padding: 3rem 2rem 3rem 2rem;
+        }
+        &__fourth {
+            padding: 3rem 0rem 2.5rem 0;
+        }
+        &__dollars {
+            font-size: 3.6rem;
+        }
+    }
+    .links {
+        margin-bottom: 3rem;
     }
 }

@@ -27,7 +27,7 @@
     }
 
     &__img {
-        
+        max-width: 33.33vw;
     }
 
     &__block {
@@ -71,6 +71,10 @@
         text-transform: uppercase;
         color: #DE470D;
     }
+}
+
+.content__link:hover {
+    color: $c-secondary;
 }
 
 @media screen and (max-width: $md) {

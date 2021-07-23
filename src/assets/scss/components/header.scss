@@ -55,3 +55,27 @@
         }
     }
 }
+
+@media screen and (max-width: $xs) {
+    .header {
+        &__links {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__logo {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__a{
+            margin: 0 3rem;
+        }
+    }
+}

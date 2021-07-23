@@ -261,6 +261,20 @@ button {
     width: 30%;
     text-align: right; } }
 
+@media screen and (max-width: 576px) {
+  .header__links {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem; }
+  .header__content {
+    display: flex;
+    flex-wrap: wrap; }
+  .header__logo {
+    width: 100%;
+    text-align: center; }
+  .header__a {
+    margin: 0 3rem; } }
+
 .article {
   background: #343434;
   border-radius: 0px;
@@ -332,7 +346,7 @@ button {
   .block__first {
     padding: 3.5rem 7.5rem 2.8rem 8rem; }
   .block__second {
-    padding: 4rem 3rem 4rem 4rem; }
+    padding: 4rem 3.2rem 4rem 4rem; }
   .block__third {
     padding: 3rem 6rem 3rem 6.7rem; }
   .block__fourth {
@@ -379,6 +393,26 @@ button {
 @media screen and (max-width: 1140px) {
   .block {
     justify-content: center; } }
+
+@media screen and (max-width: 768px) {
+  .main-section__title {
+    font-size: 7.4rem; } }
+
+@media screen and (max-width: 576px) {
+  .main-section__title {
+    font-size: 6rem; }
+  .block__first {
+    padding: 3rem 3.4rem 2rem 3.4rem; }
+  .block__second {
+    padding: 3rem 2rem 3rem 2rem; }
+  .block__third {
+    padding: 3rem 2rem 3rem 2rem; }
+  .block__fourth {
+    padding: 3rem 0rem 2.5rem 0; }
+  .block__dollars {
+    font-size: 3.6rem; }
+  .links {
+    margin-bottom: 3rem; } }
 
 .work-section__row {
   padding: 0 7rem;
@@ -516,6 +550,9 @@ button {
   padding: 0.3rem 1.3rem 0 0.6rem;
   display: inline-block; }
 
+.products__cost:hover {
+  color: #708D92; }
+
 .list-active {
   background: #FBDCC5; }
   .list-active .list__text {
@@ -527,6 +564,19 @@ button {
     justify-content: center; }
   .products {
     margin: 2rem; } }
+
+@media screen and (max-width: 576px) {
+  .products__img {
+    max-width: 60.76vw; }
+  .products {
+    text-align: center; }
+    .products__description {
+      flex-wrap: wrap; }
+    .products__cost {
+      margin: 0 auto;
+      margin-bottom: 1rem; }
+    .products__giveback {
+      margin: 0 auto; } }
 
 .fresh-section {
   margin-bottom: 5.7rem; }
@@ -544,6 +594,8 @@ button {
   .content__row-img {
     width: 50%;
     text-align: right; }
+  .content__img {
+    max-width: 33.33vw; }
   .content__block {
     width: 50%;
     padding: 14.3rem 0 0 9rem; }
@@ -576,6 +628,9 @@ button {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     color: #DE470D; }
+
+.content__link:hover {
+  color: #708D92; }
 
 @media screen and (max-width: 1140px) {
   .content__row-img {
@@ -610,6 +665,10 @@ button {
   .content__row-img-second {
     width: 100%;
     text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .care-section {
+    padding: 0rem 0 6rem 0; } }
 
 .coffee-section {
   margin-bottom: 5.7rem; }
@@ -660,6 +719,11 @@ button {
     color: #343434;
     margin-bottom: 10.7rem;
     text-align: center; }
+  .celebration-section__link:hover {
+    color: #708D92; }
+
+.content__img17 {
+  max-width: 38.54vw; }
 
 .block-imgs {
   display: flex;
@@ -686,6 +750,14 @@ button {
   .celebration-section__description {
     margin: 0 auto;
     margin-bottom: 3.5rem; } }
+
+@media screen and (max-width: 1140px) {
+  .celebration-section {
+    padding: 10rem 0 4rem 0; } }
+
+@media screen and (max-width: 576px) {
+  .celebration-section__block-title {
+    font-size: 4rem; } }
 
 .boonletter-section {
   margin-bottom: 8rem; }
@@ -721,6 +793,9 @@ button {
     text-transform: uppercase;
     color: #FFF;
     padding: 2rem 5rem 2rem 1.8rem; }
+
+.boonletter-section__link:hover {
+  color: #708D92; }
 
 .input {
   background: #FFFFFF;
@@ -804,6 +879,8 @@ button {
     font-size: 1.2rem;
     line-height: 1.35;
     color: #747474; }
+  .links-b__links:hover {
+    color: #708D92; }
 
 @media screen and (max-width: 768px) {
   .footer {

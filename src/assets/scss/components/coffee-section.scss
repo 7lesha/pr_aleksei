@@ -18,3 +18,9 @@
         padding: 10rem 0 0 0rem;
     }
 }
+
+@media screen and (max-width: $xs) {
+    .coffee-section__block {
+        padding: 6rem 0 0 0rem;
+    }
+}

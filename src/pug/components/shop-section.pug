@@ -1,17 +1,17 @@
 section.shop-section
-    .shop-section__title Shop Your Values
-    .shop-section__hr
-    .container.shop-section__row 
-        .shop-section__list 
+    div.shop-section__title Shop Your Values
+    div.shop-section__hr
+    div.container.shop-section__row 
+        div.shop-section__list 
             mixin item(args={})
                 if(args.modification)
-                    .list.list-active
+                    div.list.list-active
                         img.list__img(src=args.img, alt="картинка")
-                        .list__text=args.text
+                        div.list__text=args.text
                 else
-                    .list
+                    div.list
                         img.list__img(src=args.img, alt="картинка")
-                        .list__text=args.text
+                        div.list__text=args.text
             +item({
                 img:'./assets/imgs/img5.svg', 
                 text:'Toxin Free',
@@ -42,15 +42,15 @@ section.shop-section
                 text:'Certified B Corporation',
                 modification: false
             })
-        .shop-section__products
+        div.shop-section__products
             mixin items(img, text, title, cost, giveback)
-                .products
+                div.products
                     img.products__img(src=img, alt="картинка")
-                    .products__text=text 
-                    .products__title=title 
-                    .products__description
+                    div.products__text=text 
+                    div.products__title=title 
+                    div.products__description
                         a.products__cost(href="#")!=cost
-                        .products__giveback=giveback
+                        div.products__giveback=giveback
             +items("./assets/imgs/img11.png",'Boon Supply','Reusable Towels, Set of 4, Fruit','Add to Bag&emsp;-&emsp;$22','40% Giveback')
             +items("./assets/imgs/img12.png",'Zip Top','Reusable Storage Set','Add to Bag&emsp;-&emsp;$90','20% Giveback')
             +items("./assets/imgs/img13.png",'HiBAR','Zero Waste Moisturize Shampoo and Conditioner','Add to Bag&emsp;-&emsp;$27','10% Giveback')

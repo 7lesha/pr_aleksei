@@ -44,7 +44,7 @@
     }
 
     &__img {
-
+        max-width: 100%;
     }
 
     &__boon-text {
@@ -137,5 +137,15 @@
 
     .links-b {
         margin: 0 2rem 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .footer__boonlett {
+        padding: 6rem 0rem 0rem 0rem;
+    }
+
+    .footer__links-b {
+        padding: 9rem 0rem 1rem 0rem;
     }
 }

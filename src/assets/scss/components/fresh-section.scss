@@ -70,6 +70,12 @@
         letter-spacing: 0.2rem;
         text-transform: uppercase;
         color: #DE470D;
+        display: inline-block;
+        transition: transform 1s ease;
+    }
+
+    &__link:hover {
+        transform: scale(1.2, 1.2);
     }
 }
 
@@ -96,5 +102,13 @@
             max-width: 40rem;
             margin-bottom: 1.6rem;
         }
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+    .fresh-section__title {
+        font-size: 4rem;
+        margin-bottom: 6rem;
     }
 }

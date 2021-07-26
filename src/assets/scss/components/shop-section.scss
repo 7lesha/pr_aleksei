@@ -49,6 +49,7 @@
     margin: 0rem 0.5rem 2rem 0.5rem;
 
     &__img {
+        max-width: 2.8rem;
         margin-right: 1rem;
     }
 
@@ -65,6 +66,7 @@
 
     &__img {
         margin-bottom: 1.6rem;
+        max-width: 100%;
     }
 
     &__text {
@@ -95,6 +97,8 @@
         letter-spacing: 1.5px;
         text-transform: uppercase;
         color: $c-text;
+        display: inline-block;
+        transition: transform 1s ease;
     }
 
     &__giveback {
@@ -112,6 +116,7 @@
 
 .products__cost:hover {
     color: $c-secondary;
+    transform: rotate(720deg);
 }
 
 .list-active {
@@ -136,6 +141,11 @@
 @media screen and (max-width: $xs) {
     .products__img {
         max-width: 60.76vw;
+    }
+
+    .shop-section__title {
+        font-size: 4.2rem;
+        margin-bottom: 6rem;
     }
 
     .products {

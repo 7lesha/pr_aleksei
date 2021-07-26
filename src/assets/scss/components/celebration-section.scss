@@ -2,8 +2,8 @@
 
 .celebration-section {
     background: $c-primary;
-    padding: 16rem 0 4rem 0;
-    margin-bottom: 9.5rem;
+    padding: 16rem 0 7.5rem 0;
+    margin-bottom: 6.8rem;
     &__row {
 
     }
@@ -40,11 +40,17 @@
         line-height: 1.15;
         letter-spacing: 0.15rem;
         text-transform: uppercase;
-        color: #DE470D; 
+        color: #DE470D;
+        display: inline-block;
+        transition: transform 1s ease; 
+    }
+
+    &__link:hover {
+        transform: scale(1.2, 1.2);
     }
 
     &__block-imgs {
-        padding: 0 2.7rem;
+        padding: 0 1.5rem;
     }
 
     &__block-title {
@@ -52,7 +58,7 @@
         font-size: 4.5rem;
         line-height: 1;
         color: $c-text;
-        margin-bottom: 10.7rem;
+        margin-bottom: 10rem;
         text-align: center;
     }
 
@@ -71,8 +77,9 @@
     justify-content: center;
 
     &__img-row {
+        max-width: 26.2rem;
         position: relative;
-        margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+        margin: 0.5rem 1rem 1.5rem 1rem;
     }
 
     &__img-row::before {
@@ -86,7 +93,7 @@
     }
 
     &__img {
-
+        max-width: 100%;
     }
 }
 
@@ -112,7 +119,18 @@
 }
 
 @media screen and (max-width: $xs) {
-    .celebration-section__block-title {
-        font-size: 4rem;
+    .celebration-section { 
+        padding: 6rem 0 4rem 0;
+        &__block-title {
+            font-size: 4rem;
+        }
+
+        &__text {
+            padding: 6rem 0 0 0rem;
+        }
+
+        &__content {
+            margin-bottom: 6rem;
+        }
     }
 }

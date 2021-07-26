@@ -275,6 +275,9 @@ button {
   .header__a {
     margin: 0 3rem; } }
 
+.logo1:hover path {
+  fill: #fff; }
+
 .article {
   background: #343434;
   border-radius: 0px;
@@ -286,6 +289,12 @@ button {
     line-height: 1.15;
     letter-spacing: 0.5px;
     color: #FFFFFF; }
+
+@keyframes sp {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 .main-section {
   background: url("../imgs/img1.png");
@@ -307,7 +316,11 @@ button {
       font-size: 8rem;
       line-height: 1.12;
       letter-spacing: 1px;
-      color: #DE470D; }
+      color: #DE470D;
+      display: inline-block;
+      transform-origin: 50% 35%; }
+  .main-section__title span {
+    animation: sp 5s infinite linear; }
   .main-section__a {
     display: inline-block;
     padding: 2rem 7rem;
@@ -320,7 +333,11 @@ button {
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     color: #747474;
-    margin-bottom: 16.5rem; }
+    display: inline-block;
+    margin-bottom: 16.5rem;
+    transition: transform 1s ease; }
+  .main-section__a:hover {
+    transform: skewX(180deg); }
   .main-section__block {
     padding: 2rem;
     background-color: #708D92;
@@ -382,7 +399,10 @@ button {
     text-transform: uppercase;
     color: #FBDCC5;
     display: inline-block;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    transition: transform 3s ease; }
+  .block__text-a:hover {
+    transform: skew(180deg, 180deg); }
 
 .blocks {
   border: 0.1rem solid #fff; }
@@ -400,7 +420,7 @@ button {
 
 @media screen and (max-width: 576px) {
   .main-section__title {
-    font-size: 6rem; }
+    font-size: 4.5rem; }
   .block__first {
     padding: 3rem 3.4rem 2rem 3.4rem; }
   .block__second {
@@ -444,6 +464,7 @@ button {
 .good {
   width: 29.35%; }
   .good__img {
+    max-width: 100%;
     margin-bottom: 1.5rem; }
   .good__title {
     font-size: 2.4rem;
@@ -465,7 +486,9 @@ button {
 @media screen and (max-width: 1140px) {
   .good {
     width: 100%;
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .work-section__row {
+    padding: 0 2rem; } }
 
 .shop-section {
   background-color: #F7F5F2;
@@ -502,6 +525,7 @@ button {
   padding: 0.5rem 3rem 0.5rem 1rem;
   margin: 0rem 0.5rem 2rem 0.5rem; }
   .list__img {
+    max-width: 2.8rem;
     margin-right: 1rem; }
   .list__text {
     font-size: 1.4rem;
@@ -511,7 +535,8 @@ button {
     margin-top: 0.5rem; }
 
 .products__img {
-  margin-bottom: 1.6rem; }
+  margin-bottom: 1.6rem;
+  max-width: 100%; }
 
 .products__text {
   font-size: 1.2rem;
@@ -537,7 +562,9 @@ button {
   line-height: 1.5;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #343434; }
+  color: #343434;
+  display: inline-block;
+  transition: transform 1s ease; }
 
 .products__giveback {
   font-size: 1rem;
@@ -551,7 +578,8 @@ button {
   display: inline-block; }
 
 .products__cost:hover {
-  color: #708D92; }
+  color: #708D92;
+  transform: rotate(720deg); }
 
 .list-active {
   background: #FBDCC5; }
@@ -568,6 +596,9 @@ button {
 @media screen and (max-width: 576px) {
   .products__img {
     max-width: 60.76vw; }
+  .shop-section__title {
+    font-size: 4.2rem;
+    margin-bottom: 6rem; }
   .products {
     text-align: center; }
     .products__description {
@@ -627,7 +658,11 @@ button {
     line-height: 1.5;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-    color: #DE470D; }
+    color: #DE470D;
+    display: inline-block;
+    transition: transform 1s ease; }
+  .content__link:hover {
+    transform: scale(1.2, 1.2); }
 
 .content__link:hover {
   color: #708D92; }
@@ -644,6 +679,11 @@ button {
     margin: 0 auto;
     max-width: 40rem;
     margin-bottom: 1.6rem; } }
+
+@media screen and (max-width: 576px) {
+  .fresh-section__title {
+    font-size: 4rem;
+    margin-bottom: 6rem; } }
 
 .care-section {
   background: #F7F5F2;
@@ -681,10 +721,14 @@ button {
     text-align: center;
     padding: 10rem 0 0 0rem; } }
 
+@media screen and (max-width: 576px) {
+  .coffee-section__block {
+    padding: 6rem 0 0 0rem; } }
+
 .celebration-section {
   background: #F7F5F2;
-  padding: 16rem 0 4rem 0;
-  margin-bottom: 9.5rem; }
+  padding: 16rem 0 7.5rem 0;
+  margin-bottom: 6.8rem; }
   .celebration-section__content {
     display: flex;
     flex-wrap: wrap;
@@ -709,15 +753,19 @@ button {
     line-height: 1.15;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
-    color: #DE470D; }
+    color: #DE470D;
+    display: inline-block;
+    transition: transform 1s ease; }
+  .celebration-section__link:hover {
+    transform: scale(1.2, 1.2); }
   .celebration-section__block-imgs {
-    padding: 0 2.7rem; }
+    padding: 0 1.5rem; }
   .celebration-section__block-title {
     font-weight: bold;
     font-size: 4.5rem;
     line-height: 1;
     color: #343434;
-    margin-bottom: 10.7rem;
+    margin-bottom: 10rem;
     text-align: center; }
   .celebration-section__link:hover {
     color: #708D92; }
@@ -730,8 +778,9 @@ button {
   flex-wrap: wrap;
   justify-content: center; }
   .block-imgs__img-row {
+    max-width: 26.2rem;
     position: relative;
-    margin: 0.5rem 0.5rem 1.5rem 0.5rem; }
+    margin: 0.5rem 1rem 1.5rem 1rem; }
   .block-imgs__img-row::before {
     content: '';
     position: absolute;
@@ -740,6 +789,8 @@ button {
     width: 26.2rem;
     height: 26.2rem;
     background: rgba(52, 52, 52, 0.15); }
+  .block-imgs__img {
+    max-width: 100%; }
 
 @media screen and (max-width: 1140px) {
   .celebration-section__text {
@@ -756,8 +807,14 @@ button {
     padding: 10rem 0 4rem 0; } }
 
 @media screen and (max-width: 576px) {
-  .celebration-section__block-title {
-    font-size: 4rem; } }
+  .celebration-section {
+    padding: 6rem 0 4rem 0; }
+    .celebration-section__block-title {
+      font-size: 4rem; }
+    .celebration-section__text {
+      padding: 6rem 0 0 0rem; }
+    .celebration-section__content {
+      margin-bottom: 6rem; } }
 
 .boonletter-section {
   margin-bottom: 8rem; }
@@ -838,6 +895,8 @@ button {
   .boonlett__td {
     border: 1px solid #FFF;
     padding: 2rem 0rem 2.3rem 3.3rem; }
+  .boonlett__img {
+    max-width: 100%; }
   .boonlett__boon-text {
     padding: 0rem 3rem 0rem 3rem;
     font-size: 2.1rem;
@@ -899,3 +958,9 @@ button {
       padding: 12rem 0rem 10rem 0rem; }
   .links-b {
     margin: 0 2rem 2rem 2rem; } }
+
+@media screen and (max-width: 576px) {
+  .footer__boonlett {
+    padding: 6rem 0rem 0rem 0rem; }
+  .footer__links-b {
+    padding: 9rem 0rem 1rem 0rem; } }

@@ -39,6 +39,7 @@
     width: 29.35%;
 
     &__img {
+        max-width: 100%;
         margin-bottom: 1.5rem;
     }
 
@@ -70,5 +71,9 @@
     .good {
         width: 100%;
         margin-bottom: 2rem;
+    }
+
+    .work-section__row {
+        padding: 0 2rem;
     }
 }

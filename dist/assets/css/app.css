@@ -236,13 +236,15 @@ button {
     top: 0;
     right: 0;
     max-width: 1310px;
-    padding: 3.5rem 1.5rem 0;
+    padding: 3.5rem 0.5rem 0;
     margin: 0 auto; }
   .header__content {
     display: flex; }
+  .header__menu {
+    position: relative; }
   .header__links {
-    width: 45%;
-    padding: 1.2rem 0 0 0; }
+    display: flex;
+    width: 45%; }
   .header__a {
     font-weight: bold;
     font-size: 1.6rem;
@@ -250,9 +252,36 @@ button {
     letter-spacing: 0.05rem;
     text-transform: capitalize;
     color: #343434;
-    margin-right: 6rem; }
+    margin-right: 4.1rem;
+    display: inline-block;
+    padding: 1rem; }
+  .header__a:hover + .menu, .header .menu:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-3rem); }
   .header__logo {
     width: 55%; }
+
+.menu {
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #F7F5F2;
+  padding: 2rem; }
+  .menu__a {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    text-transform: capitalize;
+    color: #343434; }
+
+.menu__a:hover {
+  color: #747474; }
 
 @media screen and (max-width: 768px) {
   .header__links {

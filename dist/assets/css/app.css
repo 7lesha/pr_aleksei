@@ -246,6 +246,7 @@ button {
     display: flex;
     width: 45%; }
   .header__a {
+    position: relative;
     font-weight: bold;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -255,6 +256,16 @@ button {
     margin-right: 4.1rem;
     display: inline-block;
     padding: 1rem; }
+  .header__a::after {
+    content: '';
+    position: relative;
+    right: -1rem;
+    top: 1.5rem;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #343434; }
   .header__a:hover + .menu, .header .menu:hover {
     opacity: 1;
     visibility: visible;

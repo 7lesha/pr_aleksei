@@ -49,11 +49,14 @@
         text-transform: uppercase;
         color: #FFF;
         padding: 2rem 5rem 2rem 1.8rem;
+        transition: 1s ease;
     }
-}
 
-.boonletter-section__link:hover {
-    color: $c-secondary;
+    &__link:hover {
+        color: $c-text;
+        text-decoration: none;
+        background: $c-secondary;
+    }
 }
 
 .input {

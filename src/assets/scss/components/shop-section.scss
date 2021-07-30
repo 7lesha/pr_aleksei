@@ -47,6 +47,7 @@
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 1rem;
     margin: 0rem 0.5rem 2rem 0.5rem;
+    transition: 1s ease;
 
     &__img {
         max-width: 2.8rem;
@@ -62,11 +63,23 @@
     }
 }
 
+.list:hover {
+    background: #FBDCC5;
+    .list__text {
+        text-decoration: none;
+    }
+}
+
 .products {
 
     &__img {
         margin-bottom: 1.6rem;
         max-width: 100%;
+        transition: 1s ease;
+    }
+
+    &__img:hover {
+        transform: scale(1.08, 1.08);
     }
 
     &__text {
@@ -98,7 +111,6 @@
         text-transform: uppercase;
         color: $c-text;
         display: inline-block;
-        transition: transform 1s ease;
     }
 
     &__giveback {
@@ -114,11 +126,6 @@
     }
 }
 
-.products__cost:hover {
-    color: $c-secondary;
-    transform: rotate(720deg);
-}
-
 .list-active {
     background: #FBDCC5;
 
@@ -127,6 +134,14 @@
         line-height: 1.57;
     }
 }
+
+.list-active:hover {
+    background: #fff;
+    .list__text {
+        text-decoration: none;
+    }
+}
+
 
 @media screen and (max-width: $md) {
     .shop-section__products {

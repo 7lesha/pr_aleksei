@@ -42,11 +42,12 @@
         text-transform: uppercase;
         color: #DE470D;
         display: inline-block;
-        transition: transform 1s ease; 
+        transition: 1s linear; 
     }
 
     &__link:hover {
         transform: scale(1.2, 1.2);
+        text-decoration: none;
     }
 
     &__block-imgs {
@@ -80,6 +81,7 @@
         max-width: 26.2rem;
         position: relative;
         margin: 0.5rem 1rem 1.5rem 1rem;
+        transition: transform 1s ease;
     }
 
     &__img-row::before {
@@ -94,6 +96,10 @@
 
     &__img {
         max-width: 100%;
+    }
+
+    &__img-row:hover {
+        transform: scale(1.155, 1.155);
     }
 }
 

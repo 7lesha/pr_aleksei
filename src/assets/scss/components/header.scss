@@ -44,20 +44,32 @@
 
     &__a::after {
         content: '';
-        position: relative;
+        position: absolute;
         right: -1rem;
         top: 1.5rem;
         width: 0; 
         height: 0; 
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-top: 7px solid $c-text;
+        // border-left: 7px solid transparent;
+        // border-right: 7px solid transparent;
+        // border-top: 7px solid $c-text;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid $c-text; 
     }
 
     &__a:hover + .menu, .menu:hover {
         opacity: 1;
         visibility: visible;
         transform: translateY(-3rem);
+    }
+
+    &__a:hover {
+        &::after {
+            top: 2rem;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 7px solid $c-text;
+        }
     }
 
     &__logo {
@@ -76,8 +88,9 @@
     position: absolute;
     top: 100%;
     left: 0;
+    max-width: 12.6rem;
     background: $c-primary;
-    padding: 2rem;
+    padding: 2rem 3rem;
     &__a {
         font-weight: bold;
         font-size: 1.3rem;
@@ -86,10 +99,6 @@
         text-transform: capitalize;
         color: $c-text;
     }
-}
-
-.menu__a:hover {
-    color: $c-text2;
 }
 
 @media screen and (max-width: $sm) {
